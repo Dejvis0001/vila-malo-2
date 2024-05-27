@@ -50,7 +50,7 @@ a {
     text-decoration: none;
 }
 section {
-    padding: 2.511rem 0;
+    padding: 75px 0 75px 0;
 }
 .row {
     display: flex;
@@ -137,8 +137,8 @@ li {
     color: unset !important;
 }
 /*Index-Home*/
-.carousel{height: 70vh;}
-.carousel-inner{height: 70vh;}
+.carousel{height: 80vh;}
+.carousel-inner{height: 80vh;}
 .carousel-caption {
     top: 30%;
 }
@@ -350,6 +350,8 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
     padding:14px 45px
   }
 /*Index-Gallery*/
+.gp{display: unset !important;}
+html body main section.s-gallery div.container div.gallery-main div.row div.col-md-3.fadeinup.active-up div.gallery-box{width: 100%;}
 .s-gallery .gallery-main {
     margin-top: 60px;
     display: flex;
@@ -377,10 +379,8 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
     transition-duration: 0.3s;
 }
 /*Index - Ameneties*/
-.hotel-facilities {
-    text-align: center;
-    padding: 20px;
-}
+.hotel-facilities {padding-top: 0px;}
+.facilities-icons{margin-top: 75px;}
 .hotel-facilities h1 {
     font-family: 'Cursive', serif;
     margin-bottom: 10px;
@@ -407,10 +407,11 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
 }
 /*Index-Testimonials*/
 .testimonials {
-    background: url(assets/image/28.jpg) rgba(0, 0, 0, 0.6);
+    background: url(assets/image/604.PNG) rgba(0, 0, 0, 0.6);
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
+    height: 50vh;
 }
 .card-text {
     font-size: 24px;
@@ -495,7 +496,7 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
 .award1-area {
     padding: 95px 0 65px;
     text-align: center;
-    background: url(assets/image/1.jpg);
+    background: url(assets/image/71.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -518,7 +519,7 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
     background-color: rgba(0, 0, 0, 0.5);
 }
 .award1-area .award1-area-box i {
-    color: #e7272d;
+    color: #d49b30;
     font-size: 36px;
     margin-bottom: 10px;
 }
@@ -534,10 +535,10 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
 }
 /*Rooms*/
 #rooms-head {
-    background: url(assets/image/1.jpg) rgba(0, 0, 0, 0.5);
+    background: url(assets/image/101.PNG) rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
     background-blend-mode: multiply;
     height: 70vh;
     text-align: center;
@@ -550,14 +551,14 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
     justify-content: space-between;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 20px;
     margin: 20px;
 }
 .room-image {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 500px;
+    border-radius: 10px;
     display: block;
 }
 .image-container {
@@ -604,15 +605,15 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
     margin-top: 80px;
 }
 .room-title {
-    font-size: 42px;
+    font-size: 32px;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .room-description {
-    font-size: 24px;
+    font-size: 20px;
     color: #666666;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .room-facilities {
     list-style-type: none;
@@ -678,7 +679,7 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
 }
 /*Gallery*/
 #gallery-head {
-    background: url(assets/image/2.jpg) rgba(0, 0, 0, 0.5);
+    background: url(assets/image/42.jpg) rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -750,7 +751,7 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
 }
 /*About Us*/
 #about-head {
-    background: url(assets/image/14.jpg) rgba(0, 0, 0, 0.5);
+    background: url(assets/image/71.png) rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -762,7 +763,7 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
 }
 /*Contact*/
 #contact-head {
-    background: url(assets/image/4.jpg) rgba(0, 0, 0, 0.5);
+    background: url(assets/image/504.PNG) rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -793,7 +794,7 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
     border-radius: 50%;
 }
 .contact-info .item .icon i {
-    color: #000;
+    color: #ffffff;
     font-size: 26px;
 }
 .contact-info .item h5 {
@@ -1073,11 +1074,6 @@ ul.link_menu li a:hover {
     transform: translate(10px);
 }
 /* Media Queries */
-@media only screen and (max-width: 1440px) {
-    .s-gallery .gallery-main {
-        flex-wrap: wrap;
-    }
-}
 @media only screen and (max-width: 1200px) {
     /* Scrollbar */
     ::-webkit-scrollbar {
@@ -1151,7 +1147,9 @@ ul.link_menu li a:hover {
         border-bottom: 1px solid rgba(200, 200, 200, 0.6);
         padding-bottom: 40px;
         margin-bottom: 40px;
-    }
+    }/*Gallery*/
+    .s-gallery .gallery-main{display: unset}
+    .s-gallery div.container div.gallery-main div.row div.col-md-4 div.gallery-box{margin: 25px 0;}
     /*Index*/
     .about-img{margin-top: 40px;}
     div.container div.row.align-items-center div.col-lg-6 div.about-content div.d-flex.align-items-center{margin-top: 40px;justify-content: center;}}
@@ -1160,6 +1158,8 @@ ul.link_menu li a:hover {
     .facility img{width: 100%;height: 60px;}
     div.our-room-section.mb-80 div.container div.row.g-4.justify-content-center div.col-lg-4.col-md-6 div.single-room img.img-fluid{width: 100%;}
     .mb-80 { margin-bottom: 40px;}
+    /*Testimonial*/
+    .testimonials{height: unset !important;}
     @media (max-width: 767px) {
     .plc1 {
         order: 1;
