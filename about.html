@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About Us - Vila Malo 2 , Ksamil , Albania</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="About Us - Vila Malo 2 , Ksamil , Albania , ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience great comfort and convenience at Vila Malo 2, the perfect accommodation solution near Ksamil Beach and Paradise Beach. Enjoy air-conditioned apartments, a seasonal outdoor pool and convenient amenities for the family, all minutes from Corfu International Airport and Butrint National Park.">
+    <meta name="keywords" content="Near Us - Vila Malo 2, Ksamil, Albania, Ksamil Beach 9, Butrint National Park, Family Rooms, Pool, Hotel, Accommodation, Wifi, Summer, WiFi ">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/icon/logo.png">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -20,7 +18,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-center">
@@ -92,15 +89,18 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="content">
-                            <h2 style="font-size: 40px;">About Us</h2>
-                            <p>Welcome to Vila Malo 2
-
+                    <div class="col-md-7 justify-content-center" style="display: grid;">
+                        <div class="content justify-content-center">
+                            <h2 class="text-center" style="font-size: 40px;">About Us</h2>
+                            <p class="justify-content-center">Welcome to Vila Malo 2
+                                <br>
+                                <br>
+                                <br>
                                 Nestled in the heart of Ksamil, Vila Malo 2 offers a serene retreat just an 8-minute
                                 stroll from the pristine Ksamil Beach 9 and a short distance from the picturesque
                                 Paradise Beach. Our charming accommodations provide the perfect blend of comfort and
                                 convenience, featuring a private entrance for your ease.
+                                <br>
                                 <br>
                                 <br>
                                 Our air-conditioned apartments are thoughtfully designed with your comfort in mind. Each
@@ -111,11 +111,11 @@
                                 essentials, including bed linen and towels, to ensure a restful stay.
                                 <br>
                                 <br>
+                                <br>
                                 Join us at Vila Malo 2 for an unforgettable stay in Ksamil, where comfort meets
                                 convenience in a beautiful coastal setting. Whether you're
                                 here for a family vacation, a romantic getaway, or a solo adventure, we look forward to
                                 welcoming you to your home away from home.
-
                             </p>
                             <div class="d-flex align-items-center justify-content-center mt-50">
                                 <a class="fancy"
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 justify-content-center" style="display: grid;">
+                    <div class="col-md-5 justify-content-center" style="display: grid;">
                         <div class="image ">
                             <img src="assets/image/34.jpg" class="about-img" alt="" height="600px">
                         </div>
@@ -264,7 +264,6 @@
         </section>
         <!-- End Gallery -->
         <!-- Amenities -->
-
         <!--Footer-->
         <footer>
             <div class="footer">
@@ -282,6 +281,11 @@
                                 <p> Set 700 metres from Ksamil Beach 9, Vila Malo 2 offers pool with a view, a garden
                                     and air-conditioned accommodation with a balcony and free WiFi.Welcome to our Hotel
                                     !</p>
+                                    <div class="social-icons">
+                                        <a href="https://www.facebook.com/people/Vila-Malo/100083187189529/?mibextid=9R9pXO" target="_blank" class="fab fa-facebook"></a>
+                                        <a href="https://www.instagram.com/vila.malo/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" class="fab fa-instagram"></a>
+                                    </div>
+
                             </div>
                         </div>
                         <!-- Contact Information -->
@@ -353,20 +357,24 @@
             counters.forEach(counter => {
                 const finalValue = parseInt(counter.dataset.num);
                 let start = 0;
-                const duration = 2500; // 2.5 seconds
-                const increment = finalValue / (duration / 5);
+                const duration = 10000; // 10 seconds
+                const increment = finalValue / (duration / 10);
                 function updateCounter() {
                     if (start < finalValue) {
                         start += increment;
                         if (counter.id === 'satisfactionCounter') {
                             counter.textContent = Math.ceil(start) + '%';
+                        } else if (counter.id === 'experienceCounter') {
+                            counter.textContent = '+' + Math.ceil(start);
                         } else {
                             counter.textContent = Math.ceil(start);
                         }
-                        setTimeout(updateCounter, 1); // Change timeout to 1 millisecond
+                        setTimeout(updateCounter, 10); // Change timeout to 10 milliseconds
                     } else {
                         if (counter.id === 'satisfactionCounter') {
                             counter.textContent = finalValue + '%';
+                        } else if (counter.id === 'experienceCounter') {
+                            counter.textContent = '+' + finalValue;
                         } else {
                             counter.textContent = finalValue;
                         }
@@ -377,6 +385,5 @@
         }
         animateCounters();
     </script>
-</body>
-
+    </body>
 </html>
